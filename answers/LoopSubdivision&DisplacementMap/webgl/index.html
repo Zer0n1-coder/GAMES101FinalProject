@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>LearnWebGL</title>
+    <style type="text/css">
+        .container {
+            margin: 0 auto;
+            width: 1280px;
+        }
+    </style>
+</head>
+
+<body>
+    <img id="monsterfrog-n" src="./monsterfrog/monsterfrog-n.bmp" style="display :none" />
+    <img id="monsterfrog-d" src="./monsterfrog/monsterfrog-d.bmp" style="display :none" />
+    <div class="container">
+        <canvas id="webgl" width="1280" height="720" align="center">
+            Please use a browser that supports "canvas"
+        </canvas>
+    </div>
+    <script type="module">
+        import { main } from './main.js'
+        main();
+    </script>
+</body>
+</html>
