@@ -14,13 +14,13 @@ vec3 objectColor = vec3(0.0,0.5,0.0);
 
 void main()
 {
-	//Ê¹ÓÃ¶¥µã×ÅÉ«Æ÷²åÖµµÃµ½µÄ·¨Ïß,Ğ§¹ûÓĞ²î±ğ£¬´ó¼Ò¿ÉÒÔÊÔÊÔ
-	//vec3 norm = Normal;
+    //ä½¿ç”¨é¡¶ç‚¹ç€è‰²å™¨æ’å€¼å¾—åˆ°çš„æ³•çº¿,æ•ˆæœæœ‰å·®åˆ«ï¼Œå¤§å®¶å¯ä»¥è¯•è¯•
+    //vec3 norm = Normal;
 
-	//ÔÚÆ¬Ôª×ÅÉ«Æ÷ÄÚ²ÉÑù·¨Ïß
-	vec3 norm = normalize(texture2D(texture_normal,TexCoords).rgb * 2.0 - vec3(1.0,1.0,1.0));
+    //åœ¨ç‰‡å…ƒç€è‰²å™¨å†…é‡‡æ ·æ³•çº¿
+    vec3 norm = normalize(texture2D(texture_normal,TexCoords).rgb * 2.0 - vec3(1.0,1.0,1.0));
 
-	// ambient
+    // ambient
     float ambientStrength = 0.5;
     vec3 ambient = ambientStrength * lightColor;
 
